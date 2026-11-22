@@ -1,0 +1,32 @@
+Kiểm tra xem một số có số lượng ước số của nó là số lẻ.
+Gợi ý : số có số lượng ước là số lẻ chính là số chính phương
+Đầu vào
+Dòng duy nhất chứa số nguyên dương N
+Đầu ra
+In ra YES nếu N là số có số ước là số lẻ, ngược lại in NO.
+Input 01
+Copy
+100
+Output 01
+Copy
+YES
+#include<stdio.h>
+#include<math.h>
+int uoc(long long n){
+int can=sqrt(n);//căn n
+if(1ll*can*can==n)
+return 1;
+else 
+return 0;
+}
+int main(){
+long long n;
+scanf("%lld",&n);
+if(uoc(n))
+printf("YES");
+else
+printf("NO");
+return 0;
+}
+
+

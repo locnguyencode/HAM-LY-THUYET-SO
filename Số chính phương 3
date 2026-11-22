@@ -1,0 +1,22 @@
+Đếm số lượng các số chính phương trong đoạn từ a tới b
+Đầu vào
+2 số nguyên dương a, b
+Đầu ra
+Số lượng số chính phương trong đoạn [a, b]
+Input 01
+Copy
+1 50
+Output 01
+Copy
+7
+#include<stdio.h>
+#include<math.h>
+int main(){
+long long a,b;
+scanf("%lld%lld",&a,&b);
+int canduoi=ceil(sqrt(a));//làm tròn ceil
+int cantren=sqrt(b);
+printf("%d",cantren-canduoi+1);//căn b -căn a
+return 0;
+}
+
